@@ -87,6 +87,64 @@ public class Main {
             }
             System.out.println(i);
         }
+        /** Homework
+        * #1 if-else
+         * 1.1 Дано число. Напишите программу, которая определяет, является ли оно четным или нечетным
+        */
+        int chislo = 49;
+        if (chislo % 2 == 0) {
+            System.out.println("Четное");
+        } else {
+            System.out.println("Нечетное");
+        }
+
+        /**
+         * 1.2 Даны два числа. Выведите «Первое больше», «Второе больше» или «Равны»
+         */
+        int pervoye = 41;
+        int vtoroye = 44;
+        if (pervoye > vtoroye) {
+            System.out.println("Первое больше");
+        } else if (pervoye < vtoroye) {
+            System.out.println("Второе больше");
+        } else {
+            System.out.println("Равны");
+        }
+
+        /**
+         * 1.3 Дано число. Выведите «Положительное», «Отрицательное» или «Равно нулю»
+         */
+        int z = 0;
+        if (z > 0) {
+            System.out.println("Положительное");
+        } else if (z < 0) {
+            System.out.println("Отрицательное");
+        } else {
+            System.out.println("Равно нулю");
+        }
+
+        /**
+         * 1.4 Дано число (возраст). Если возраст >= 18, выведите «Доступ разрешен», иначе — «Доступ запрещен»
+         */
+        int age = 17;
+        if (age >= 18) {
+            System.out.println("Доступ разрешен");
+        } else {
+            System.out.println("Доступ запрещен");
+        }
+
+        /**
+         * 1.5 Дан цвет таблетки от Морфеуса. Если "красный" - "Вы пробудились". Если "синий" - "Бесконечный сон в матрице". Иначе - "Не ешь это!"
+         */
+        String pilulya = "красный";
+        if (pilulya.equals("красный")) {
+            System.out.println("Вы пробудились");
+        } else if (pilulya.equals("синий")) {
+            System.out.println("Бесконечный сон в матрице");
+        } else {
+            System.out.println("Не ешь это!");
+        }
+
 
     }
 }
