@@ -239,7 +239,7 @@ public class Main {
             if (spisok2[k] > maximum) {
                 maximum = spisok2[k];
             }
-            }
+        }
         System.out.println(maximum);
 
     }
