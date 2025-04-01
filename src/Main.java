@@ -242,5 +242,37 @@ public class Main {
         }
         System.out.println(maximum);
 
+        /**
+         * 4.3 Дано число n. Выведите таблицу умножения для n от 1 до 10
+         */
+        int n = 5;
+        for (int l = 1; l < 11; l++) {
+            System.out.printf("%s * %s = %s", n, l, n*l);
+            System.out.println();
+        }
+
+        /**
+         * 4.4 С помощью цикла for выведите числа от 10 до 1 в обратном порядке
+         */
+        int m = 10;
+        for (int aa = 0; aa < 10; aa++) {
+            System.out.print(m + " ");
+            m -= 1;
+        }
+        System.out.println();
+
+        /**
+         * 4.5 Найдите количество четных чисел в диапазоне от 1 до 50
+         */
+        double number = 0;
+        int amount = 0;
+        for (int bb = 1; bb < 51; bb++) {
+            number += 1;
+            if (number % 2 == 0) {
+                amount += 1;
+            }
+        }
+        System.out.printf("Количество четных чисел: %s", amount);
+
     }
 }
