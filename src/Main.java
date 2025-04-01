@@ -144,6 +144,85 @@ public class Main {
         } else {
             System.out.println("Не ешь это!");
         }
+        /**
+        * #2 Тернарный оператор
+        * 2.1 Дано число. Используя тернарный оператор, определите, положительное, отрицательное или нулевое
+        */
+        int y = 0;
+        System.out.println(y > 0 ? "Y положительное число" : y < 0 ? "Y отрицательное число" : "Y нулевое число");
+
+        /**
+         * 2.2 Дано число. С помощью тернарного оператора проверьте, делится ли оно на 3 и 5 одновременно. Выведите «Кратно» или «Не кратно»
+         */
+        int d = 15;
+        System.out.println(d % 3 == 0 && d % 5 ==0 ? "Кратно" : "Не кратно");
+
+        /**
+         * 2.3 Для заданного числа верните строку «Четное» или «Нечетное», используя тернарный оператор.
+         */
+        int f = 11;
+        System.out.println(f % 2 == 0 ? "Четное" : "Нечетное");
+
+        /**
+         * #3 switch
+         * 3.1 Дано число от 1 до 7. Выведите название дня недели. Если число вне диапазона, выведите «Ошибка»
+         */
+        int dayOfWeek = 7;
+        switch (dayOfWeek) {
+            case 1:
+                System.out.println("Понедельник");
+                break;
+            case 2:
+                System.out.println("Вторник");
+                break;
+            case 3:
+                System.out.println("Среда");
+                break;
+            case 4:
+                System.out.println("Четверг");
+                break;
+            case 5:
+                System.out.println("Пятница");
+                break;
+            case 6:
+                System.out.println("Суббота");
+                break;
+            case 7:
+                System.out.println("Воскресенье");
+                break;
+            default:
+                System.out.println("Ошибка");
+        }
+
+        /**
+         * 3.2 Дано число от 1 до 5. Выведите описание оценки (оцените свою работу)
+         */
+        int assessment = 0;
+        switch (assessment) {
+            case 1:
+                System.out.println("Плохо");
+                break;
+            case 2:
+                System.out.println("Неудовлетворительно");
+                break;
+            case 3:
+                System.out.println("Удовлетворительно");
+                break;
+            case 4:
+                System.out.println("Хорошо");
+                break;
+            case 5:
+                System.out.println("Отлично");
+                break;
+            default:
+                System.out.println("Приходи на пересдачу");
+
+        }
+
+        /**
+         * #4 for
+         * 4.1  Дан список чисел. Посчитайте сумму всех четных элементов
+         */
 
 
     }
