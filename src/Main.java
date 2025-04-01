@@ -223,7 +223,24 @@ public class Main {
          * #4 for
          * 4.1  Дан список чисел. Посчитайте сумму всех четных элементов
          */
+        int [] spisok1 = {1, 2, 1, 2, 1, 2, 1};
+        int summ1 = 0;
+        for (int j = 1; j < spisok1.length; j = j + 2) {
+            summ1 += spisok1[j];
+        }
+            System.out.println(summ1);
 
+        /**
+        * 4.2  Дан список чисел. Найдите максимальное значение
+        */
+        int [] spisok2 = {1, 2, 3, 4, 5, 10, 8, 1, 11};
+        int maximum = 0;
+        for (int k = 0; k < spisok2.length; k++) {
+            if (spisok2[k] > maximum) {
+                maximum = spisok2[k];
+            }
+            }
+        System.out.println(maximum);
 
     }
 }
