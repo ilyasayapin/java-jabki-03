@@ -315,14 +315,14 @@ public class Main {
         /**
          * 5.4 Придумать задачу самим: пока деньги есть - работать лень.
          */
-        int cash = 10000;
-        int dayOfW = 1;
-        while (dayOfW <= 6) {
-            System.out.printf("День недели: %s. Работай, ленивая ж%па!", dayOfW);
+        int weekDay = 1;
+        while (weekDay <= 6) {
+            System.out.printf("День недели: %s Работай, ленивая ж#па!", weekDay);
             System.out.println();
-            dayOfW ++;
+            weekDay ++;
         }
-        System.out.println("Наконец-то выходной!");
+        System.out.printf("День недели: %s Наконец-то выходной!", weekDay);
+
 
 
 
