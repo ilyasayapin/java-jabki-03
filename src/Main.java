@@ -228,7 +228,7 @@ public class Main {
         for (int j = 1; j < spisok1.length; j = j + 2) {
             summ1 += spisok1[j];
         }
-            System.out.println(summ1);
+            System.out.println("Cумма всех четных элементов: " + summ1);
 
         /**
         * 4.2 Дан список чисел. Найдите максимальное значение
@@ -334,10 +334,27 @@ public class Main {
             }
             System.out.print(w + " ");
          }
+        System.out.println();
 
         /**
          * 6.2 Дан список чисел. Суммируйте элементы, пока не встретите отрицательное число
          */
+        int [] spisokChisel = {1, 1, 1, 1, 1, 5, -5, 100};
+        int summa = 0;
+        for (int h = 0; h <= spisokChisel.length; h++) {
+            if (spisokChisel[h] < 0) {
+                break;
+            }
+            summa += spisokChisel[h];
+        }
+        System.out.println("Сумма чисел: " + summa);
+        System.out.println();
+
+        /**
+         * 6.3 Дан список чисел. Суммируйте элементы, пока сумма не превысит 100
+         */
+        int [] spisokChisel2 = {}
+
 
 
 
