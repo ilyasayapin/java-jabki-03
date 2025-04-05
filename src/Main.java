@@ -248,11 +248,9 @@ public class Main {
         System.out.println();
 
         // 4.5 Найдите количество четных чисел в диапазоне от 1 до 50
-        int number = 0;
         int amount = 0;
         for (int bb = 1; bb < 51; bb++) {
-            number += 1;
-            if (number % 2 == 0) {
+            if (bb % 2 == 0) {
                 amount += 1;
             }
         }
