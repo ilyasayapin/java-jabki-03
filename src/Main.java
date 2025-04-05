@@ -274,7 +274,7 @@ public class Main {
         int fctr = 1;
         while (nn <= en) {
             fctr *= nn;
-            nn ++;
+            nn++;
         }
         System.out.printf("Факториал %s равен %s", en, fctr);
         System.out.println();
