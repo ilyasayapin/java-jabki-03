@@ -298,7 +298,7 @@ public class Main {
         while (weekDay <= 6) {
             System.out.printf("День недели: %s Работай, ленивая ж#па!", weekDay);
             System.out.println();
-            weekDay ++;
+            weekDay++;
         }
         System.out.printf("День недели: %s Наконец-то выходной!", weekDay);
         System.out.println();
