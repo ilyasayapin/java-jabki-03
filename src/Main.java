@@ -223,19 +223,19 @@ public class Main {
             System.out.println("Cумма всех четных элементов: " + summ1);
 
         // 4.2 Дан список чисел. Найдите максимальное значение
-        int [] spisok2 = {1, 2, 3, 4, 5, 10, 8, 1, 11};
-        int maximum = 0;
-        for (int k = 0; k < spisok2.length; k++) {
+        int [] spisok2 = {-1, -2, -3, -4, -5, -10, -8, -1, -11};
+        int maximum = spisok2[0];
+        for (int k = 1; k < spisok2.length; k++) {
             if (spisok2[k] > maximum) {
                 maximum = spisok2[k];
             }
         }
-        System.out.println(maximum);
+        System.out.println("Максимальное значение: " + maximum);
 
         // 4.3 Дано число n. Выведите таблицу умножения для n от 1 до 10
         int n = 5;
         for (int l = 1; l < 11; l++) {
-            System.out.printf("%s * %s = %s", n, l, n*l);
+            System.out.printf("%s * %s = %s", n, l, n * l);
             System.out.println();
         }
 
