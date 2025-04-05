@@ -269,27 +269,29 @@ public class Main {
         System.out.println("Наименьшее число больше 100, которое делится на 7: " + cc);
 
         // 5.2 Дано число n. Вычислите его факториал через цикл while
-        int N = 3;
+        int en = 3;
         int nn = 1;
         int fctr = 1;
-        while (nn <= N) {
+        while (nn <= en) {
             fctr *= nn;
             nn ++;
         }
-        System.out.printf("Факториал %s равен %s", N, fctr);
+        System.out.printf("Факториал %s равен %s", en, fctr);
         System.out.println();
 
         // 5.3 Дано число. Определите, является ли оно простым
-        int X = 13;
-        int mm = 1;
-        int chek = 0;
-        while (mm <= X) {
-            if (X % mm == 0) {
-                chek++;
-            }
+        int xx = 13;
+        int mm = 2;
+        while (mm <= xx-1) {
+                if (xx % mm == 0) {
+                System.out.println(xx + " - не простое число");
+                break;
+            } else if (mm == xx - 1) {
+                    System.out.println(xx + " - простое число");
+                }
             mm++;
         }
-        System.out.printf("Число %s простое? - %s", X, chek == 2);
+
 
         // 5.4 Придумать задачу самим: пока будни - включить мотивацию.
         int weekDay = 1;
