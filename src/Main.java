@@ -1,3 +1,5 @@
+import static java.lang.Math.sqrt;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -282,16 +284,15 @@ public class Main {
         // 5.3 Дано число. Определите, является ли оно простым
         int xx = 13;
         int mm = 2;
-        while (mm <= xx-1) {
-                if (xx % mm == 0) {
-                System.out.println(xx + " - не простое число");
+        boolean isPrime = true;
+        while (mm <= sqrt(xx)) {
+            if (xx % mm == 0) {
+                isPrime = false;
                 break;
-            } else if (mm == xx - 1) {
-                    System.out.println(xx + " - простое число");
-                }
+            }
             mm++;
         }
-
+        System.out.println(xx + " - простое число? - " + isPrime);
 
         // 5.4 Придумать задачу самим: пока будни - включить мотивацию.
         int weekDay = 1;
